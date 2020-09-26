@@ -1,0 +1,139 @@
+{
+    "model": {
+        "entities": [
+            {
+                "properties": [
+                    {
+                        "calculatedPropertyExpression": "",
+                        "dataAutoIncrement": "true",
+                        "dataLength": "0",
+                        "dataName": "ID",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "true",
+                        "dataType": "INTEGER",
+                        "dataUnique": "false",
+                        "isCalculatedProperty": "false",
+                        "name": "Id",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetType": "TEXTBOX"
+                    },
+                    {
+                        "calculatedPropertyExpression": "",
+                        "dataAutoIncrement": "false",
+                        "dataLength": "20",
+                        "dataName": "FIRSTNAME",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "false",
+                        "dataType": "VARCHAR",
+                        "dataUnique": "false",
+                        "isCalculatedProperty": "false",
+                        "name": "FirstName",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetType": "TEXTBOX"
+                    },
+                    {
+                        "calculatedPropertyExpression": "",
+                        "dataAutoIncrement": "false",
+                        "dataLength": "20",
+                        "dataName": "LASTNAME",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "false",
+                        "dataType": "VARCHAR",
+                        "dataUnique": "false",
+                        "isCalculatedProperty": "false",
+                        "name": "LastName",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetType": "TEXTBOX"
+                    }
+                ],
+                "dataCount": "SELECT COUNT(*) AS COUNT FROM CUSTOMER",
+                "dataName": "CUSTOMER",
+                "dataQuery": "",
+                "icon": "file-o",
+                "layoutType": "MANAGE",
+                "menuIndex": "100",
+                "menuKey": "customer",
+                "menuLabel": "Customer",
+                "name": "Customer",
+                "perspectiveIcon": "files-o",
+                "perspectiveName": "Entities",
+                "perspectiveOrder": "100",
+                "title": "Customer",
+                "tooltip": "Customer",
+                "type": "PRIMARY"
+            },
+            {
+                "properties": [
+                    {
+                        "calculatedPropertyExpression": "",
+                        "dataAutoIncrement": "true",
+                        "dataLength": "0",
+                        "dataName": "ID",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "true",
+                        "dataType": "INTEGER",
+                        "dataUnique": "false",
+                        "isCalculatedProperty": "false",
+                        "name": "Id",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetType": "TEXTBOX"
+                    },
+                    {
+                        "calculatedPropertyExpression": "",
+                        "dataAutoIncrement": "false",
+                        "dataLength": "0",
+                        "dataName": "CUSTOMER",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "false",
+                        "dataType": "INTEGER",
+                        "dataUnique": "false",
+                        "isCalculatedProperty": "false",
+                        "name": "Customer",
+                        "relationshipCardinality": "1_1",
+                        "relationshipType": "EXTENSION",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetType": "TEXTBOX",
+                        "relationshipName": "GenderExtension_Customer",
+                        "relationshipEntityName": "Customer",
+                        "relationshipEntityPerspectiveName": "Entities"
+                    },
+                    {
+                        "calculatedPropertyExpression": "",
+                        "dataAutoIncrement": "false",
+                        "dataLength": "20",
+                        "dataName": "GENDER",
+                        "dataNullable": "true",
+                        "dataPrimaryKey": "false",
+                        "dataType": "INTEGER",
+                        "dataUnique": "false",
+                        "isCalculatedProperty": "false",
+                        "name": "Gender",
+                        "widgetIsMajor": "true",
+                        "widgetLength": "20",
+                        "widgetType": "TEXTBOX"
+                    }
+                ],
+                "dataCount": "SELECT COUNT(*) AS COUNT FROM GENDEREXTENSION",
+                "dataName": "GENDEREXTENSION",
+                "dataQuery": "",
+                "icon": "file-o",
+                "layoutType": "MANAGE",
+                "menuIndex": "100",
+                "menuKey": "genderextension",
+                "menuLabel": "GenderExtension",
+                "name": "GenderExtension",
+                "perspectiveIcon": "files-o",
+                "perspectiveName": "Entities",
+                "perspectiveOrder": "100",
+                "title": "GenderExtension",
+                "tooltip": "GenderExtension",
+                "type": "EXTENSION"
+            }
+        ]
+    }
+}

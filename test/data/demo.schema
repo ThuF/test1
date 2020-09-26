@@ -1,0 +1,67 @@
+{
+    "schema": {
+        "structures": [
+            {
+                "name": "CUSTOMER",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "ID"
+                    },
+                    {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "FIRSTNAME"
+                    },
+                    {
+                        "type": "VARCHAR",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "LASTNAME"
+                    }
+                ]
+            },
+            {
+                "name": "GENDEREXTENSION",
+                "type": "TABLE",
+                "columns": [
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "primaryKey": true,
+                        "identity": true,
+                        "nullable": true,
+                        "name": "ID"
+                    },
+                    {
+                        "type": "INTEGER",
+                        "length": 0,
+                        "nullable": true,
+                        "name": "CUSTOMER"
+                    },
+                    {
+                        "type": "INTEGER",
+                        "length": 20,
+                        "nullable": true,
+                        "name": "GENDER"
+                    }
+                ]
+            },
+            {
+                "name": "GenderExtension_Customer",
+                "type": "foreignKey",
+                "table": "GENDEREXTENSION",
+                "constraintName": "GenderExtension_Customer",
+                "columns": "CUSTOMER",
+                "referencedTable": "CUSTOMER",
+                "referencedColumns": "Id"
+            }
+        ]
+    }
+}

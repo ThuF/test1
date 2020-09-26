@@ -1,0 +1,5 @@
+{
+	"description": "Entities tiles",
+	"extensionPoint": "launchpad-demo-tiles",
+	"module": "test/ui/Entities/views/Customer/extensions/tile/tile.js"
+}

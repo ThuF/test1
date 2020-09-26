@@ -1,0 +1,4 @@
+{
+	"description": "Extension Point for the demo Tiles Providers",
+	"name": "launchpad-demo-tiles"
+}

@@ -1,0 +1,5 @@
+{
+	"description": "Home perspective",
+	"extensionPoint": "launchpad-demo-perspective",
+	"module": "test/ui/extensions/perspective.js"
+}

@@ -1,0 +1,5 @@
+{
+	"description": "Customer menu",
+	"extensionPoint": "shell-test-menu",
+	"module": "test/views/Customer/menu/item.js"
+}
